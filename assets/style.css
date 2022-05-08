@@ -1,0 +1,82 @@
+body
+{
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+	background-image: url("bg.jpg");
+   backdrop-filter: blur(3px);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
+	
+		
+
+}
+
+.cal {
+
+	border: black 2px solid;       
+	background: rgba( 86, 187, 241, 0.3 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.9 );
+	border: 1px solid rgba( 255, 255, 255, 0.6 );
+	border-radius: 9px;
+	
+	
+}
+.cal {
+    position: relative;
+    display: grid;	
+}
+
+.cal .value {
+    grid-column: span 4;
+    text-align: right;
+    height: 120px;
+    outline: none;
+    border-bottom: 1px solid rgba( 255, 187, 241, 0.8 );
+	border-left: 0px;
+	border-top: 0px;
+	border-right: 0px;
+    padding: 10px;
+    font-size: 19px;
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
+	background: rgba( 255, 187, 241, 0.3 );
+
+}
+.cal span {
+display: grid;
+width: 60px;
+height: 60px;
+color: #000000;
+	font-weight: bold;
+background: rgba( 86, 187, 241, 0 );
+place-items: center;
+}
+.cal span:active{
+  background: #8BDB81;  
+}
+.cal span.clear
+{
+grid-column: span 2;
+width: 100%;
+background: rgba(255, 48, 119, 0.5);
+}
+.cal span.plus {
+grid-row : span 2;
+height: 120px;
+}
+.cal span.equal {
+background: rgba(242, 250, 90, 0.5) ;
+color: black;
+	width:100%;
+	border-bottom-right-radius: 9px;
+}
+
+.cal span.zero {
+	border-bottom-left-radius: 9px;
+	
+
+}

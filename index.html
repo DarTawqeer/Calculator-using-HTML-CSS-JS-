@@ -1,0 +1,34 @@
+<html>
+   <head>
+     <title>CALCULATOR</title>
+      
+      <link rel="stylesheet" href="assets/style.css">
+   </head>
+   <body>
+	   <!-- Image source https://wallpaper.dog/large/20516065.jpg -->
+      <div class="calbody">
+		  
+	   <form class="cal" name="calculator">
+         <input class="value" type="text" name="io" readonly="">
+          <span class="num clear" onclick="document.calculator.io.value =''">c </span>
+          <span class="num" onclick="document.calculator.io.value +='/'">/ </span>
+          <span class="num" onclick="document.calculator.io.value +='*'">*</span>
+          <span class="num" onclick="document.calculator.io.value +='7'">7</span>
+          <span class="num" onclick="document.calculator.io.value +='8'">8</span>
+          <span class="num" onclick="document.calculator.io.value +='9'">9</span>
+          <span class="num" onclick="document.calculator.io.value +='-'">-</span>
+          <span class="num" onclick="document.calculator.io.value +='4'">4</span>
+          <span class="num" onclick="document.calculator.io.value +='5'">5</span>
+          <span class="num" onclick="document.calculator.io.value +='6'">6</span>
+          <span class="num plus" onclick="document.calculator.io.value +='+'">+</span>
+          <span class="num" onclick="document.calculator.io.value +='3'">3</span>
+          <span class="num" onclick="document.calculator.io.value +='2'">2</span>
+          <span class="num" onclick="document.calculator.io.value +='1'">1</span>
+          <span class="num zero" onclick="document.calculator.io.value +='0'">0</span>
+          <span class="num" onclick="document.calculator.io.value +='00'">00</span>
+          <span class="num" onclick="document.calculator.io.value +='.'">.</span>
+          <span class="num equal" onclick="document.calculator.io.value = eval(calculator.io.value)">=</span>
+      </form>
+	   </div>
+   </body>
+</html>   
